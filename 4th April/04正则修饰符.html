@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var reg=/a/gi;
+        console.log('aDDAaeda'.match(reg));
+        console.log('asdfeaAAAa'.search(reg));
+
+        //正则表达式exec
+        var reg1=/a/g;
+        var str='aaerf67ya';
+        console.log(reg1.exec(str));
+
+        //贪婪模式与懒惰模式
+        var str1='azsenwsa';
+        var reg2=/a.*/g;
+        console.log(str1.match(reg2));//贪婪模式 默认
+
+        var reg3=/a.*?/
+        console.log(str1.match(reg3));
+    </script>
+</body>
+</html>

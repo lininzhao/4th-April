@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //将字符串转化为数组，以数字作为分隔符
+        var str='he3llo34worl8d';
+        var arr=str.split(/\d/);
+        console.log(arr);
+        var reg=/^a/;//以a 开头
+        var reg1=/d$/; //以d结尾
+        console.log(reg1.test(str));
+
+        //match方法
+        var reg2=/l/g;//g是正则表达式的修饰符号，表示全局匹配
+        var res=str.match(reg2);
+        console.log(res);
+
+        //replace方法
+        var reg3=/\d/g;
+        var res=str.replace(reg3,'');
+        console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //检查是否为压缩文件，文件名字不能以数字开头，文件名包含数字字母下划线，文件后缀为.zip/rar/gz
+        var reg=/^[a-zA-Z]\w*\.(zip|rar|gz)$/;
+        var file=prompt('请输入您的文件');
+        console.log(reg.test(file));
+    </script>
+</body>
+</html>

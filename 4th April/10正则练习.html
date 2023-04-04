@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //密码判断由数字密码下划线构成的6-20位
+        var reg=/^\w{6,20}$/;
+        var passWord=prompt('请输入你的密码');
+        if(!reg.test(passWord)){
+            alert('请输入合法的密码');
+        }
+    </script>
+</body>
+</html>

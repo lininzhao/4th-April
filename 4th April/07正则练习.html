@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //正则判断邮政编码：6位数字，且第一位不能为0
+        var reg=/^[1-9]\d{5}$/;
+        var postCode=prompt('请输入6位邮编');
+        console.log(reg.test(postCode));
+
+        //正则判断手机号码11位，且必须为13，15，17，18开头
+        var reg1=/^1[3578]\d{9}$/;
+        var phoneNumber=prompt('请输入手机号码');
+        console.log(reg1.test(phoneNumber));
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //qq号第一位不可以是0，位数5-12
+        var reg2=/^[1-9]\d{4,11}$/;
+        var qqNumber=prompt('请输入QQ号');
+        console.log(reg2.test(qqNumber));
+    </script>
+</body>
+</html>

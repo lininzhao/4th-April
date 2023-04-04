@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //定义函数判断手机号码不可以为空，必须以135，137开头，长度必须是11位，且组成为数字
+
+        function f(tel){
+            if(tel==''){
+                alert('手机号码不可以为空');
+                return;//作用是不返回函数，表示终止函数；
+            }
+            var str=tel.substr(0,3);
+            if(str!='135'&&str!='137'){
+                alert('必须以135，137开头');
+                return;
+            }
+            if(tel.length!=11){
+                alert('手机号长度必须为11位');
+                return;
+            }
+            for(var i=0;i<tel.length;i++){
+                if(tel[i]>=0 && tel[i]<=9){
+
+                }else{
+                    alert('手机号必须由数字构成');
+                    break;
+                    return;
+                }
+            }
+            //如果手机号码合法对手机号格式进行处理：135****1123
+            var newTel=str+'****'+tel.substr(7);
+            alert(`您的手机号为${newTel}`);
+        }
+        f('13512368057');
+    </script>
+</body>
+</html>
